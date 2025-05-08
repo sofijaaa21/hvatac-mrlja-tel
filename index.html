@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hvatač mrlja</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="hero"></div>
+    <div id="enemies"></div>
+    <div id="bullets"></div>
+    <div id="score">0</div>
+  </div>
+
+  <div id="controls">
+    <button onclick="moveHero('up')">⬆️</button>
+    <div>
+      <button onclick="moveHero('left')">⬅️</button>
+      <button onclick="simulateSpace()">🔫</button>
+      <button onclick="moveHero('right')">➡️</button>
+    </div>
+    <button onclick="moveHero('down')">⬇️</button>
+  </div>
+
+  <audio id="shoot-sound" src="shoot.mp3"></audio>
+  <script src="1942.js"></script>
+</body>
+</html>
