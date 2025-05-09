@@ -189,6 +189,24 @@ function respawnEnemies() {
     }
 }
 
+
+let currentDirection = null;
+let movementInterval = null;
+
+function startMoving(direction) {
+    currentDirection = direction;
+    moveHero(direction); // odmah pomeri
+    movementInterval = setInterval(() => {
+        moveHero(currentDirection);
+    }, 50);
+}
+
+function stopMoving() {
+    clearInterval(movementInterval);
+    currentDirection = null;
+}
+
+
 // Pokretanje
 displayHero();
 displayEnemies();

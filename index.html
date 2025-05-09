@@ -13,14 +13,31 @@
     <div id="score">0</div>
   </div>
 
+  <!-- Kontrole -->
   <div id="controls">
-    <button onclick="moveHero('up')">⬆️</button>
+    <button 
+      onmousedown="startMoving('up')" 
+      onmouseup="stopMoving()" 
+      ontouchstart="startMoving('up')" 
+      ontouchend="stopMoving()">⬆️</button>
     <div>
-      <button onclick="moveHero('left')">⬅️</button>
+      <button 
+        onmousedown="startMoving('left')" 
+        onmouseup="stopMoving()" 
+        ontouchstart="startMoving('left')" 
+        ontouchend="stopMoving()">⬅️</button>
       <button onclick="simulateSpace()">🔫</button>
-      <button onclick="moveHero('right')">➡️</button>
+      <button 
+        onmousedown="startMoving('right')" 
+        onmouseup="stopMoving()" 
+        ontouchstart="startMoving('right')" 
+        ontouchend="stopMoving()">➡️</button>
     </div>
-    <button onclick="moveHero('down')">⬇️</button>
+    <button 
+      onmousedown="startMoving('down')" 
+      onmouseup="stopMoving()" 
+      ontouchstart="startMoving('down')" 
+      ontouchend="stopMoving()">⬇️</button>
   </div>
 
   <audio id="shoot-sound" src="shoot.mp3"></audio>
